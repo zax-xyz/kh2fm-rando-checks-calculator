@@ -10,11 +10,6 @@ body {
   background: #f2f3f8;
 }
 
-:root[theme="dark"] body {
-  background: #212121;
-  color: white;
-}
-
 section {
   margin: 1em;
   padding: 1.5em 1em;
@@ -23,9 +18,16 @@ section {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-:root[theme="dark"] section {
-  background: #333;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+    color: white;
+  }
+
+  section {
+    background: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
 }
 
 section > h1 {

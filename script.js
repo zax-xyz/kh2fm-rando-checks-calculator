@@ -1,23 +1,3 @@
-const darkThemeSwitch = document.getElementById("dark-theme-switch");
-switch (localStorage.theme) {
-  case "dark":
-    darkThemeSwitch.checked = true;
-    break;
-  case "light":
-    darkThemeSwitch.checked = false;
-    break;
-  // it is by default on from the HTML
-}
-
-function toggleDarkTheme() {
-  const theme = darkThemeSwitch.checked ? "dark" : "light";
-  document.documentElement.setAttribute("theme", theme);
-  localStorage.theme = theme;
-}
-
-toggleDarkTheme();
-darkThemeSwitch.addEventListener("change", toggleDarkTheme);
-
 const values = {
   settings: {
     "Critical Mode": 7,
