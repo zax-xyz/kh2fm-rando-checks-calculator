@@ -31,11 +31,13 @@ const values = {
     "Hades Cup": 1,
     "Lingering Will (Terra)": 2,
     Sephiroth: 1,
+    "Form Abilities": 15,
+    "Form Growth Abilities": 15,
   },
 };
 
-// 6 * 5 checks on drive form levels + 3 in GoA
-let checks = 33;
+// 3 chests in GoA
+let checks = 3;
 
 ["settings", "worlds", "include"].forEach(category => {
   document.querySelectorAll(`#${category} li`).forEach(e => {
