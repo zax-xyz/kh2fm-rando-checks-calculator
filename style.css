@@ -97,3 +97,20 @@ input:checked + .slider::before {
 input:checked + .slider {
   background: hsl(210, 70%, 60%);
 }
+
+button {
+  padding: 7px 15px;
+  background: hsl(210, 70%, 55%);
+  color: hsl(210, 100%, 98%);
+  box-shadow: 0 2px 5px hsla(210, 100%, 60%, 0.2);
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.25s, background 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover {
+  background: hsl(210, 70%, 50%);
+  transform: translateY(-2px);
+}

@@ -33,11 +33,11 @@ const values = {
     Sephiroth: 1,
     "Form Abilities": 15,
     "Form Growth Abilities": 15,
+    "GoA Chests": 3,
   },
 };
 
-// 3 chests in GoA
-let checks = 3;
+let checks = 0;
 
 ["settings", "worlds", "include"].forEach(category => {
   document.querySelectorAll(`#${category} li`).forEach(e => {
@@ -66,5 +66,13 @@ document.querySelectorAll("section input").forEach(e => {
     }
 
     checksElem.innerText = checks;
+  });
+});
+
+document.getElementById("toggle-all-btn").addEventListener("click", () => {
+  document.querySelectorAll("section input").forEach(e => {
+    if (e.checked) {
+      e.click();
+    }
   });
 });
