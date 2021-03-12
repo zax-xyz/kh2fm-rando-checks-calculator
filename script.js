@@ -54,8 +54,8 @@ const values = {
   },
 };
 
-// 6 * 5 checks on drive form levels
-let checks = 30;
+// 6 * 5 checks on drive form levels + 3 in GoA
+let checks = 33;
 
 ["settings", "worlds", "include"].forEach(category => {
   document.querySelectorAll(`#${category} li`).forEach(e => {
