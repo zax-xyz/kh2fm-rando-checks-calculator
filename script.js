@@ -29,6 +29,10 @@ document.querySelectorAll("section input").forEach(e => {
   });
 });
 
-document.getElementById("toggle-all-btn").addEventListener("click", () => {
+document.getElementById("all-off-btn").addEventListener("click", () => {
   document.querySelectorAll("section input:checked").forEach(e => e.click());
+});
+
+document.getElementById("all-on-btn").addEventListener("click", () => {
+  document.querySelectorAll("section input:not(:checked)").forEach(e => e.click());
 });
