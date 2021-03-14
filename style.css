@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  margin: 1em;
+  margin: 1em 0.5em;
   padding: 1.5em 1em;
   background: white;
   border-radius: 4px;
@@ -44,7 +44,7 @@ section ul {
 
 section li {
   flex: 1;
-  min-width: 250px;
+  flex-basis: 250px;
   text-align: center;
 }
 
@@ -113,4 +113,19 @@ button {
 button:hover {
   background: hsl(210, 70%, 50%);
   transform: translateY(-2px);
+}
+
+@media (max-width: 597px) {
+  section li {
+    display: flex;
+    align-items: center;
+  }
+
+  section ul h1 {
+    margin: 0.75em 0;
+  }
+
+  section ul .switch {
+    margin-left: auto;
+  }
 }
